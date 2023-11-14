@@ -6,6 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.skostyukov.nytfeed.model.Result
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
 
 class RecyclerAdapter(private val dataSet: List<Result>) :
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
@@ -31,16 +34,13 @@ class RecyclerAdapter(private val dataSet: List<Result>) :
         val view = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.recycler_item, viewGroup, false)
 
-//        val lp = view.layoutParams
-//        lp.height = 256
-//        view.layoutParams = lp
-
         return ViewHolder(view)
     }
 
     // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
-        viewHolder.textViewDateTime.text = dataSet[position].first_published_date
+        viewHolder.textViewDateTime.text = LocalDateTime.parse(dataSet[position].first_published_date, DateTimeFormatter.ISO_OFFSET_DATE_TIME)
+            .format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM, FormatStyle.SHORT))
         viewHolder.textViewTitle.text = dataSet[position].title
         viewHolder.textViewBy.text = dataSet[position].byline
     }
