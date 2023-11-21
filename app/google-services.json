@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "983586847009",
+    "project_id": "nyt-feed-5b1c1",
+    "storage_bucket": "nyt-feed-5b1c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983586847009:android:63683ce4cd75955511e660",
+        "android_client_info": {
+          "package_name": "com.skostyukov.nytfeed"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeoaBztOTO5osLn92I1cOeQIMDkdsK5hU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
