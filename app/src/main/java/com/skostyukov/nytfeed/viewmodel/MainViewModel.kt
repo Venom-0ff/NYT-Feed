@@ -28,7 +28,8 @@ class MainViewModel : ViewModel() {
 
     private suspend fun getDataFromCoroutine(): APIFormat? {
         val defer = CoroutineScope(Dispatchers.IO).async {
-            val url = URL("https://api.nytimes.com/svc/news/v3/content/all/world.json?api-key=435dnRm9ZmRAYv7gnsTuC8tgbFCfe90n")
+            val url =
+                URL("https://api.nytimes.com/svc/news/v3/content/all/world.json?api-key=435dnRm9ZmRAYv7gnsTuC8tgbFCfe90n")
             val connection = url.openConnection() as HttpsURLConnection
 
             if (connection.responseCode == 200) {
@@ -40,8 +41,7 @@ class MainViewModel : ViewModel() {
                 inputSystem.close()
 
                 return@async request
-            }
-            else {
+            } else {
                 return@async null
             }
         }

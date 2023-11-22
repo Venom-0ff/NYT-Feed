@@ -1,17 +1,28 @@
 <resources>
     <string name="app_name">NYT Feed</string>
-    <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in">Sign in</string>
     <string name="action_register">Register new user</string>
     <string name="action_logout">Logout</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
+    <string name="action_history">History</string>
+    <string name="clear_history">Clear History</string>
+    <string name="back">Go Back</string>
+    <string name="welcome">Welcome!</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="logged_out">You are now logged out</string>
     <string name="no_account">Do not have an account? Register</string>
     <string name="here">Here</string>
+    <string name="no_history">History cleared</string>
+    <string name="action_about">About</string>
+    <string name="about">About: This app uses NYT Newswire API. It fetches the latest 20 news
+        articles and displays them in a RecyclerView, the user can tap each article and read the
+        full version in their browser. To use the app users must register and sign in using their
+        email address. Authentication is provided by Firebase Authentication. Users can also see
+        their view history. It\'s stored in Cloud Firestore for each user and can be cleared by a
+        press of a button.</string>
+    <string name="author">Author: Stepan Kostyukov.</string>
 </resources>

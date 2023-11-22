@@ -9,7 +9,7 @@
     android:paddingHorizontal="5dp">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardView"
+        android:id="@+id/cardViewHistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="10dp"
@@ -26,37 +26,15 @@
             android:layout_marginVertical="5dp"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="235dp"
-                android:importantForAccessibility="no"
-                android:scaleType="fitXY" />
-
             <TextView
-                android:id="@+id/textViewImgCopyright"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="11sp" />
-
-            <TextView
-                android:id="@+id/textViewTitle"
+                android:id="@+id/textViewTitleHistory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textViewBy"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textSize="17sp"
-                android:textStyle="italic" />
-
-            <TextView
-                android:id="@+id/textViewDate"
+                android:id="@+id/textViewDateHistory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text=""
